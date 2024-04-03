@@ -1,0 +1,2 @@
+# Faixa inclinada animation
+ 
