@@ -24,10 +24,14 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
-    //animation: scroll 20s infinite linear;
-    //animation: slide 0.5s ease-in-out forwards; /* Adiciona a animação */
-    span{
-        animation: scroll 1s infinite linear;
+    .slick-list{
+        height: 100%;
+        .slick-track{
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
     }
     
 }
@@ -41,9 +45,9 @@
 }
 
 @keyframes scroll {
-    0% {
+    /* 0% {
         transform: translateX(0%);
-    }
+    } */
     100% {
         transform: translateX(-100%);
     }
