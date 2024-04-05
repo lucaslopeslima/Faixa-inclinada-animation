@@ -1,0 +1,60 @@
+.linha__diagonal{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.diagonal-bg {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50px; /* Ajuste a altura conforme necessário */
+    background: linear-gradient(to bottom right, #ff00cc, #3333ff);
+    transform: skewY(-10deg); /* Inclinação diagonal */
+}
+
+.carousel {
+    /* position: absolute;
+    bottom: 0;
+    left: 0; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    //animation: scroll 20s infinite linear;
+    //animation: slide 0.5s ease-in-out forwards; /* Adiciona a animação */
+    span{
+        //animation: scroll 1s infinite linear;
+    }
+    
+}
+
+.carousel-item {
+    //padding: 10px;
+    //margin-right: 20px;
+    color: white;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+        //opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        //opacity: 1;
+    }
+}
