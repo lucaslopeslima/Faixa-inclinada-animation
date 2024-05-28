@@ -52,7 +52,8 @@ $ganhoDeAltura: calc(100% * tan($inclinacao));
 }
 .linha__diagonal-depois{
     width: 100%;
-    height: 50vh;
+    //height: 50vh;
+    height: calc(100vh - $ganhoDeAltura);
     background-color: white;
     transform: skewY($inclinacao);
     margin-top: -5px;
